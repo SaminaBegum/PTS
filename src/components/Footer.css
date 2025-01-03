@@ -1,0 +1,155 @@
+/* General Footer Styling */
+footer {
+    background-color: #111827;
+    color: #ffffff;
+    padding: 40px 20px;
+  
+  }
+  
+  footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #f4f4f4;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  footer a {
+    color:  #ffffff;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: #ff9800;
+    text-decoration: underline;
+  }
+  
+  /* Footer Sections */
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    
+  }
+  
+  .footer-section {
+    flex: 1 1 calc(20% - 20px); /* Adjust to fit multiple sections */
+    min-width: 200px;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 8px;
+  }
+  
+  /* Follow Us & Subscribe Section */
+  .footer-top .footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .footer-logo img {
+    max-width: 150px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-social a {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .footer-social img {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+  }
+  
+  .footer-social a:hover img {
+    filter: brightness(1.2);
+  }
+  
+  .footer-social a:hover {
+    color: #ff9800;
+  }
+  
+  .footer-subscription {
+    margin-top: 20px;
+  }
+  
+  .footer-subscription h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .footer-subscription input[type="email"] {
+    padding: 10px;
+    width: 70%;
+    margin-right: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+  }
+  
+  .footer-subscription button {
+    padding: 10px 20px;
+    background-color: #00bcd4;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .footer-subscription button:hover {
+    background-color: #ff9800;
+  }
+  
+  /* Footer Content */
+  .footer-content {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #bbbbbb;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+  }
+  
+  .footer-bottom p {
+    font-size: 0.9rem;
+    color: #cccccc;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-top {
+      flex-direction: column;
+    }
+  
+    .footer-section {
+      flex: 1 1 100%;
+      margin-bottom: 20px;
+    }
+  
+    .footer-subscription input[type="email"] {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .footer-subscription button {
+      width: 100%;
+    }
+  }
+  

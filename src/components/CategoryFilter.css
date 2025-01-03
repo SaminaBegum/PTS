@@ -1,0 +1,281 @@
+/* CategoryFilter.css */
+.category-filter-container {
+ 
+  padding: 20px;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.category-sidebar {
+  width: 25%;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.category-checkbox {
+  margin-bottom: 10px;
+}
+
+.product-list {
+  width: 75%;
+  padding: 10px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 4 items per row */
+  gap: 20px;
+}
+
+.product-item {
+  height: 300px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 0;
+}
+
+.product-image-container {
+  position: relative;
+}
+
+.product-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.preview-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #6366f1;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 24px;
+  display: none;
+}
+
+.product-item:hover .preview-icon {
+  display: block;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-button {
+  margin: 0 5px;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pagination-button.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.pagination-button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.top-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filter-toggle-button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.filter-toggle-button:hover {
+  background-color: #0056b3;
+}
+
+.sort-by label {
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+.sort-by select {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.main-content {
+  display: flex;
+  gap: 20px;
+}
+
+.category-sidebar {
+  flex: 1;
+}
+
+.product-list {
+  flex: 3;
+}
+
+.category-filter-container-wrapper {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.top-options-container {
+  margin-bottom: 20px;
+}
+.properties-section {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.properties-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.properties-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.property-item {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #555;
+  display: flex;
+  justify-content: space-between;
+}
+
+.property-item strong {
+  color: #000;
+}
+
+
+@media (max-width: 768px) {
+  .category-filter-container {
+      flex-direction: column;
+  }
+
+  .category-sidebar {
+      width: 100%;
+      border-right: none;
+      margin-bottom: 20px;
+  }
+
+  .product-list {
+      width: 100%;
+  }
+
+  .product-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 items per row for tablets */
+  }
+  
+
+  .category-filter-container {
+    flex-direction: row; /* Ensure the layout adjusts properly */
+  }
+
+  .product-list {
+    width: 100%;
+  }
+  .main-content {
+    flex-direction: column; /* Stack items vertically */
+    gap: 10px; /* Reduce gap for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .top-options {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .filter-toggle-button {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  .product-grid {
+      grid-template-columns: repeat(1, 1fr); /* 1 item per row for phones */
+  }
+
+  
+
+  .pagination {
+      flex-wrap: wrap;
+  }
+
+  .pagination-button {
+      margin: 5px;
+      padding: 6px 10px;
+  }
+}
+
+
+/* Optional: Add extra styling for mobile responsiveness */
+
+@media (max-width: 768px) {
+  
+
+  .category-filter-container {
+    flex-direction: column; /* Adjust layout for responsiveness */
+  }
+
+  .product-list {
+    width: 100%;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .top-options {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filter-toggle-button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(1, 1fr); /* 1 item per row for phones */
+  }
+
+  .pagination {
+    flex-wrap: wrap;
+  }
+
+  .pagination-button {
+    margin: 5px;
+    padding: 6px 10px;
+  }
+  .main-content {
+    flex-direction: column; /* Stack items vertically */
+    gap: 10px; /* Reduce gap for smaller screens */
+  }
+}

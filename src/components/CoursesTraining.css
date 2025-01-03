@@ -1,0 +1,45 @@
+.courses-training-page {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .common-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .common-section h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+  }
+  
+  .common-section p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  .extra-features {
+    padding: 20px;
+  }
+  
+  .extra-features h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #444;
+  }
+  
+  .course-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .course-list li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #eaf4fc;
+    border-radius: 5px;
+  }
+  

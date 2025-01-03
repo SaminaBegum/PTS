@@ -1,0 +1,38 @@
+.web-template-collection1 {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .filter-sidebar {
+    width: 30%;
+    padding: 15px;
+   
+  }
+  
+  .template-images {
+    width: 70%;
+    padding: 15px;
+  }
+  
+  .filtered-templates {
+    margin-bottom: 20px;
+  }
+  
+  .template {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+  }
+  
+  .template:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .image-section img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 20px auto;
+  }
+  

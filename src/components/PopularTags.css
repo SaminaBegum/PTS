@@ -1,0 +1,53 @@
+
+.popular-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .tag {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #a6acb2;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+ 
+  .tag:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+  }
+  
+ 
+  .related-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+  }
+  
+  .related-images img {
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+  }
+  
+  .related-images img:hover {
+    transform: scale(1.05);
+  }
+  
+  
+  .related-images p {
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    margin: 20px 0;
+  }
+  
